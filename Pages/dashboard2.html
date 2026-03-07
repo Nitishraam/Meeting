@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./dashboard.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+</head>
+<body>
+    
+      <!-- <div id="loader">
+        <span class="loader">Stackly</span>
+    </div> -->
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                
+                   <a href="../index.html" class="logo">
+                <img class="logo2" src="../Images/logo.webp" alt="Stackly Logo"/>
+            </a> 
+
+               
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <a href="../index.html" class="nav-link dropdown-toggle">
+                                Home <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./home2.html" class="dropdown-link">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="./product.html" class="nav-link">Product</a></li>
+                        <li class="nav-item"><a href="./features.html" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="./dashboard.html" class="nav-link">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-end">
+                    <a href="./signin.html" class="btn btn-primary">Sign In</a>
+                    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+
+<ul>
+
+<li><a href="./error.html"><i class="fa fa-home"></i> Dashboard</a></li>
+
+<li><a href="./error.html"><i class="fa fa-video"></i> Meetings</a></li>
+
+<li><a href="./error.html"><i class="fa fa-calendar"></i> Schedule</a></li>
+
+<li><a href="./error.html"><i class="fa fa-users"></i> Team</a></li>
+
+<li><a href="./error.html"><i class="fa fa-chart-line"></i> Analytics</a></li>
+
+<li><a href="./error.html"><i class="fa fa-cog"></i> Settings</a></li>
+
+</ul>
+
+</div>
+
+<div class="overlay"></div>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Topbar -->
+
+<div class="topbar">
+
+<button class="menu-toggle">
+<i class="fa fa-bars"></i>
+</button>
+
+<h1>Dashboard</h1>
+
+
+
+</div>
+
+
+<!-- Stats Cards -->
+
+<div class="stats">
+
+<div class="card">
+<h3>18</h3>
+<p>Meetings Today</p>
+</div>
+
+<div class="card">
+<h3>240</h3>
+<p>Total Meetings</p>
+</div>
+
+<div class="card">
+<h3>56</h3>
+<p>Team Members</p>
+</div>
+
+<div class="card">
+<h3>98%</h3>
+<p>Meeting Success</p>
+</div>
+
+</div>
+
+
+<!-- Charts -->
+
+<div class="analytics">
+
+<div class="chart-card">
+
+<h3>Meeting Activity</h3>
+
+<canvas id="meetingChart"></canvas>
+
+</div>
+
+
+<div class="pie-card">
+
+<h3>Meeting Types</h3>
+
+<canvas id="typeChart"></canvas>
+
+</div>
+
+</div>
+
+
+<!-- Table -->
+
+<div class="table-section">
+
+<h3>Recent Meetings</h3>
+
+<div class="table-scroll">
+
+<table>
+
+<tr>
+<th>Meeting</th>
+<th>Date</th>
+<th>Participants</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Project Planning</td>
+<td>7 Mar 2026</td>
+<td>10</td>
+<td class="active">Active</td>
+</tr>
+
+<tr>
+<td>Design Review</td>
+<td>6 Mar 2026</td>
+<td>6</td>
+<td class="completed">Completed</td>
+</tr>
+
+<tr>
+<td>Client Demo</td>
+<td>5 Mar 2026</td>
+<td>8</td>
+<td class="completed">Completed</td>
+</tr>
+
+<tr>
+<td>Team Standup</td>
+<td>4 Mar 2026</td>
+<td>12</td>
+<td class="completed">Completed</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col" data-aos="fade-up">
+
+<h3>Stackly</h3>
+
+<p>
+A modern meeting platform designed for teams to collaborate,
+host video meetings, and stay connected from anywhere.
+</p>
+
+<div class="footer-social">
+
+<a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="./error.html"><i class="fa-brands fa-twitter"></i></a>
+<a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="./error.html"><i class="fa-brands fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+
+<div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+
+<h3>Quick Links</h3>
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="./features.html">Features</a></li>
+<li><a href="./product.html">Pricing</a></li>
+<li><a href="./contact2.html">Contact</a></li>
+<li><a href="./dashboard.html">Dashboard</a></li>
+</ul>
+
+</div>
+
+
+<div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+
+<h3>Address</h3>
+
+<p>
+123 Tech Street<br>
+Salem, Tamil Nadu<br>
+India
+</p>
+
+<p>Email: support@meetflow.com</p>
+<p>Phone: +91 98765 43210</p>
+
+</div>
+
+
+<div class="footer-col map-col" data-aos="fade-up" data-aos-delay="300">
+
+<h3>Our Location</h3>
+
+  <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>© 2026 MeetFlow. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+
+
+
+<script>
+const toggleBtn = document.querySelector(".menu-toggle")
+const sidebar = document.querySelector(".sidebar")
+const overlay = document.querySelector(".overlay")
+
+toggleBtn.addEventListener("click", () => {
+
+sidebar.classList.toggle("active")
+overlay.classList.toggle("active")
+
+})
+
+overlay.addEventListener("click", () => {
+
+sidebar.classList.remove("active")
+overlay.classList.remove("active")
+
+})
+
+// Meeting Activity Chart
+
+new Chart(
+document.getElementById("meetingChart"),
+{
+type:"line",
+data:{
+labels:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+datasets:[{
+data:[6,9,7,12,15,10,14],
+borderColor:"#5B5FC7",
+backgroundColor:"rgba(91,95,199,0.2)",
+fill:true,
+tension:0.4
+}]
+},
+options:{
+responsive:true,
+plugins:{legend:{display:false}}
+}
+}
+)
+
+
+// Meeting Type Chart
+
+new Chart(
+document.getElementById("typeChart"),
+{
+type:"doughnut",
+data:{
+labels:["Team","Client","Internal"],
+datasets:[{
+data:[45,30,25],
+backgroundColor:[
+"#5B5FC7",
+"#36A2EB",
+"#FF6384"
+]
+}]
+},
+options:{
+responsive:true,
+plugins:{
+legend:{position:"bottom"}
+}
+}
+}
+)
+</script>
+
+
+       <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+    // Toggle Mobile Menu
+    mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // Change Icon
+        const icon = mobileToggle.querySelector('i');
+        if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Handle Dropdown for mobile view
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parentItem = toggle.parentElement;
+                parentItem.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close menu when clicking outside (mobile view)
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileToggle.querySelector('i').classList.remove('fa-times');
+                mobileToggle.querySelector('i').classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Adjust behavior on window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+            mobileToggle.querySelector('i').classList.remove('fa-times');
+            mobileToggle.querySelector('i').classList.add('fa-bars');
+            
+            // remove active classes from dropdowns
+            document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+    });
+});
+
+    </script>
+
+        <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100,
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.opacity = "0";
+                loader.style.pointerEvents = "none";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            }, 1100);
+        });
+    </script>
+
+</body>
+</html>

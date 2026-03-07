@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+        <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- <div id="loader">
+        <span class="loader">Stackly</span>
+    </div> -->
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                
+                   <a href="./index.html" class="logo">
+                <img class="logo2" src="./Images/logo.webp" alt="Stackly Logo"/>
+            </a> 
+
+               
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <a href="./index.html" class="nav-link dropdown-toggle">
+                                Home <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./Pages/home2.html" class="dropdown-link">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="./Pages/product.html" class="nav-link">Product</a></li>
+                        <li class="nav-item"><a href="./Pages/features.html" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="./Pages/contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="./Pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-end">
+                    <a href="./Pages/signin.html" class="btn btn-primary">Sign In</a>
+                    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<section class="hero">
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1>Connect, Meet & Collaborate</h1>
+            <p>
+                A modern meeting platform for teams. Host video meetings,
+                chat with your team, and collaborate from anywhere.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="./Pages/error.html" class="start-btn">Start Meeting</a>
+                <a href="./Pages/error.html" class="join-btn">Join Meeting</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="./Images/h2.webp">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="features">
+<div class="features-container">
+
+<div class="features-title" data-aos="fade-up" data-aos-duration="1000">
+<h2>Work Together From Anywhere</h2>
+<p>Powerful tools to connect your team and make meetings productive.</p>
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+<div class="feature-icon">
+<i class="fa-solid fa-video"></i>
+</div>
+<h3>HD Video Meetings</h3>
+<p>Host secure and crystal clear video meetings with your team anytime.</p>
+</div>
+
+<div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+<div class="feature-icon">
+<i class="fa-solid fa-comments"></i>
+</div>
+<h3>Team Chat</h3>
+<p>Send messages, share files and stay connected with your team.</p>
+</div>
+
+<div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+<div class="feature-icon">
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+<h3>Screen Sharing</h3>
+<p>Present your ideas easily by sharing your screen in meetings.</p>
+</div>
+
+<div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+<div class="feature-icon">
+<i class="fa-solid fa-lock"></i>
+</div>
+<h3>Secure Meetings</h3>
+<p>Enterprise level security keeps your meetings safe and private.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="collaboration">
+
+<div class="collaboration-container">
+
+<div class="collab-image" data-aos="fade-right">
+<img src="./Images/h3.webp">
+</div>
+
+<div class="collab-content">
+
+<h2 data-aos="fade-up">Powerful Collaboration For Modern Teams</h2>
+<p data-aos="fade-up" data-aos-delay="100">
+Run meetings, share ideas, and manage projects in one powerful workspace designed for modern teams.
+</p>
+
+<div class="collab-list">
+
+<div class="collab-item" data-aos="fade-left" data-aos-delay="200">
+<div class="collab-icon">
+<i class="fa-solid fa-video"></i>
+</div>
+<div class="collab-text">
+<h3>Smart Video Meetings</h3>
+<p>High quality meetings with noise suppression and smart camera focus.</p>
+</div>
+</div>
+
+<div class="collab-item" data-aos="fade-left" data-aos-delay="300">
+<div class="collab-icon">
+<i class="fa-solid fa-share"></i>
+</div>
+<div class="collab-text">
+<h3>Instant Screen Share</h3>
+<p>Present documents, slides, and ideas instantly with one click.</p>
+</div>
+</div>
+
+<div class="collab-item" data-aos="fade-left" data-aos-delay="400">
+<div class="collab-icon">
+<i class="fa-solid fa-users"></i>
+</div>
+<div class="collab-text">
+<h3>Team Collaboration</h3>
+<p>Work together with chat, meetings, and shared workspaces.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="stats-section">
+
+<div class="stats-container">
+
+<div class="stats-left" data-aos="fade-right">
+<h2>Trusted by Teams Worldwide</h2>
+<p>Thousands of companies use our platform to host meetings, collaborate with teams, and stay productive from anywhere.</p>
+
+<a href="./Pages/error.html" class="stats-btn">Start Free Meeting</a>
+</div>
+
+<div class="stats-right">
+
+<div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+<h3>10K+</h3>
+<p>Daily Meetings</p>
+</div>
+
+<div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+<h3>5K+</h3>
+<p>Active Teams</p>
+</div>
+
+<div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+<h3>99.9%</h3>
+<p>Uptime</p>
+</div>
+
+<div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+<h3>120+</h3>
+<p>Countries</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="meeting-cta">
+
+<div class="cta-container">
+
+<div class="cta-content" data-aos="fade-right">
+<h2>Start Your First Meeting Today</h2>
+<p>Create a meeting room, invite your team, and collaborate instantly from anywhere in the world.</p>
+
+<a href="./Pages/error.html" class="cta-btn">Create Meeting</a>
+
+</div>
+
+<div class="cta-cards">
+
+<div class="cta-card" data-aos="flip-left" data-aos-delay="100">
+<i class="fa-solid fa-video"></i>
+<h3>Video Call</h3>
+<p>Crystal clear HD meetings with your entire team.</p>
+</div>
+
+<div class="cta-card" data-aos="flip-left" data-aos-delay="200">
+<i class="fa-solid fa-display"></i>
+<h3>Screen Share</h3>
+<p>Share your screen and present ideas instantly.</p>
+</div>
+
+<div class="cta-card" data-aos="flip-left" data-aos-delay="300">
+<i class="fa-solid fa-message"></i>
+<h3>Live Chat</h3>
+<p>Communicate with your team during meetings.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="testimonials">
+
+<div class="testimonials-container">
+
+<div class="testimonial-title" data-aos="fade-up">
+<h2>What Teams Say About Us</h2>
+<p>Thousands of teams use our meeting platform every day to collaborate and stay productive.</p>
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+<p>"This platform completely changed how our remote team communicates. Meetings are smooth and reliable."</p>
+
+<div class="user-info">
+<img src="./Images/p1.webp">
+<div>
+<h4>Daniel Carter</h4>
+<span>Project Manager</span>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+<p>"The screen sharing and video quality are amazing. It feels like we're in the same room."</p>
+
+<div class="user-info">
+<img src="./Images/p4.webp">
+<div>
+<h4>Sarah Wilson</h4>
+<span>Product Designer</span>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+<p>"We host all our client meetings here. The experience is professional and extremely reliable."</p>
+
+<div class="user-info">
+<img src="./Images/p5.webp">
+<div>
+<h4>Michael Lee</h4>
+<span>Startup Founder</span>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="feature-showcase">
+
+<div class="feature-container">
+
+<div class="feature-title" data-aos="fade-up">
+<h2>Everything You Need For Better Meetings</h2>
+<p>Powerful features designed to make collaboration faster, easier, and more productive.</p>
+</div>
+
+<div class="feature-row">
+
+<div class="feature-image" data-aos="fade-right">
+<img src="./Images/h4.webp">
+</div>
+
+<div class="feature-content" data-aos="fade-left">
+
+<div class="feature-item">
+<h3>Smart Video Meetings</h3>
+<p>Experience crystal clear HD meetings with advanced noise cancellation and adaptive video quality.</p>
+</div>
+
+<div class="feature-item">
+<h3>Real-Time Screen Sharing</h3>
+<p>Present slides, documents, or live demos instantly during your meetings.</p>
+</div>
+
+<div class="feature-item">
+<h3>Meeting Recording</h3>
+<p>Record important discussions and access them later from your meeting dashboard.</p>
+</div>
+
+<a href="./Pages/error.html" class="feature-link">Explore Features</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="pricing">
+
+<div class="pricing-container">
+
+<div class="pricing-title" data-aos="fade-up">
+<h2>Choose Your Plan</h2>
+<p>Flexible pricing designed for teams of all sizes.</p>
+</div>
+
+<div class="pricing-grid">
+
+<div class="pricing-card" data-aos="zoom-in" data-aos-delay="100">
+<h3>Starter</h3>
+<h4>$0<span>/month</span></h4>
+
+<ul>
+<li>Up to 5 participants</li>
+<li>40 min meeting limit</li>
+<li>Screen sharing</li>
+<li>Basic chat</li>
+</ul>
+
+<a href="./Pages/error.html" class="plan-btn">Get Started</a>
+</div>
+
+<div class="pricing-card popular" data-aos="zoom-in" data-aos-delay="200">
+<div class="popular-tag">Popular</div>
+
+<h3>Professional</h3>
+<h4>$12<span>/month</span></h4>
+
+<ul>
+<li>Up to 50 participants</li>
+<li>Unlimited meetings</li>
+<li>HD video quality</li>
+<li>Meeting recordings</li>
+</ul>
+
+<a href="./Pages/error.html" class="plan-btn">Start Free Trial</a>
+</div>
+
+<div class="pricing-card" data-aos="zoom-in" data-aos-delay="300">
+<h3>Enterprise</h3>
+<h4>$29<span>/month</span></h4>
+
+<ul>
+<li>Unlimited participants</li>
+<li>4K video meetings</li>
+<li>Cloud recording</li>
+<li>Priority support</li>
+</ul>
+
+<a href="./Pages/error.html" class="plan-btn">Contact Sales</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="faq">
+
+<div class="faq-container">
+
+<div class="faq-title" data-aos="fade-up">
+<h2>Frequently Asked Questions</h2>
+<p>Find answers to common questions about our meeting platform.</p>
+</div>
+
+<div class="faq-wrapper">
+
+<div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+<div class="faq-question">
+<h3>How do I start a meeting?</h3>
+<span>+</span>
+</div>
+<div class="faq-answer">
+<p>You can create a meeting instantly from your dashboard and share the meeting link with your team.</p>
+</div>
+</div>
+
+<div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+<div class="faq-question">
+<h3>Do participants need an account?</h3>
+<span>+</span>
+</div>
+<div class="faq-answer">
+<p>No account is required for guests. They can join meetings directly using the meeting link.</p>
+</div>
+</div>
+
+<div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+<div class="faq-question">
+<h3>Can I record meetings?</h3>
+<span>+</span>
+</div>
+<div class="faq-answer">
+<p>Yes, meeting recording is available for professional and enterprise plans.</p>
+</div>
+</div>
+
+<div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+<div class="faq-question">
+<h3>Is the platform secure?</h3>
+<span>+</span>
+</div>
+<div class="faq-answer">
+<p>All meetings are protected with encryption and secure authentication.</p>
+</div>
+</div>
+
+</div>
+
+<div class="faq-contact" data-aos="zoom-in">
+<p>Still have questions?</p>
+<a href="./Pages/error.html" class="faq-btn">Contact Support</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="platform">
+
+<div class="platform-container">
+
+<div class="platform-content" data-aos="fade-right">
+
+<h2>Meet From Any Device</h2>
+
+<p>
+Join meetings from your laptop, tablet, or mobile phone. 
+Our platform works smoothly across all devices so you can stay connected anywhere.
+</p>
+
+<div class="platform-links">
+
+<a href="./Pages/error.html" class="platform-btn">
+<i class="fa-brands fa-apple"></i>
+Download for iOS
+</a>
+
+<a href="./Pages/error.html" class="platform-btn">
+<i class="fa-brands fa-android"></i>
+Download for Android
+</a>
+
+</div>
+
+</div>
+
+<div class="platform-image" data-aos="fade-left">
+
+<div class="device-card">
+<i class="fa-solid fa-laptop"></i>
+<p>Desktop</p>
+</div>
+
+<div class="device-card">
+<i class="fa-solid fa-tablet-screen-button"></i>
+<p>Tablet</p>
+</div>
+
+<div class="device-card">
+<i class="fa-solid fa-mobile-screen"></i>
+<p>Mobile</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col" data-aos="fade-up">
+
+<h3>Stackly</h3>
+
+<p>
+A modern meeting platform designed for teams to collaborate,
+host video meetings, and stay connected from anywhere.
+</p>
+
+<div class="footer-social">
+
+<a href="./Pages/error.html"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="./Pages/error.html"><i class="fa-brands fa-twitter"></i></a>
+<a href="./Pages/error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="./Pages/error.html"><i class="fa-brands fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+
+<div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+
+<h3>Quick Links</h3>
+
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./Pages/features.html">Features</a></li>
+<li><a href="./Pages/product.html">Pricing</a></li>
+<li><a href="./Pages/contact.html">Contact</a></li>
+<li><a href="./Pages/dashboard.html">Dashboard</a></li>
+</ul>
+
+</div>
+
+
+<div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+
+<h3>Address</h3>
+
+<p>
+123 Tech Street<br>
+Salem, Tamil Nadu<br>
+India
+</p>
+
+<p>Email: support@meetflow.com</p>
+<p>Phone: +91 98765 43210</p>
+
+</div>
+
+
+<div class="footer-col map-col" data-aos="fade-up" data-aos-delay="300">
+
+<h3>Our Location</h3>
+
+  <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>© 2026 MeetFlow. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+
+
+<script>
+  
+
+const faqItems=document.querySelectorAll(".faq-item")
+
+faqItems.forEach(item=>{
+item.querySelector(".faq-question").addEventListener("click",()=>{
+item.classList.toggle("active")
+})
+})
+</script>
+
+
+<script>
+    const cards=document.querySelectorAll(".feature-card")
+
+cards.forEach(card=>{
+card.addEventListener("mouseenter",()=>{
+card.style.transform="translateY(-8px) scale(1.03)"
+})
+
+card.addEventListener("mouseleave",()=>{
+card.style.transform="translateY(0) scale(1)"
+})
+})
+</script>
+
+
+   
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+    // Toggle Mobile Menu
+    mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // Change Icon
+        const icon = mobileToggle.querySelector('i');
+        if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Handle Dropdown for mobile view
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parentItem = toggle.parentElement;
+                parentItem.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close menu when clicking outside (mobile view)
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileToggle.querySelector('i').classList.remove('fa-times');
+                mobileToggle.querySelector('i').classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Adjust behavior on window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+            mobileToggle.querySelector('i').classList.remove('fa-times');
+            mobileToggle.querySelector('i').classList.add('fa-bars');
+            
+            // remove active classes from dropdowns
+            document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+    });
+});
+
+    </script>
+
+        <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100,
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.opacity = "0";
+                loader.style.pointerEvents = "none";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            }, 1100);
+        });
+    </script>
+
+</body>
+</html>

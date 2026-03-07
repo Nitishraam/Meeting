@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Furniture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #aea7a7 0%, #e8e8e8 50%, #d2b48c 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-icon {
+            font-size: 12rem;
+            background: linear-gradient(45deg, #c0c0c0, #8b4513);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+            display: block;
+            font-weight: 600;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        .chair-icon {
+            font-size: 8rem;
+            color: #8b4513;
+            margin: 2rem 0;
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #8b4513;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .error-message {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 14px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 160px;
+            justify-content: center;
+        }
+
+        .btn-home {
+            background: linear-gradient(45deg, #c0c0c0, #a0a0a0);
+            color: #333;
+            box-shadow: 0 6px 20px rgba(192, 192, 192, 0.4);
+        }
+
+        .btn-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(192, 192, 192, 0.6);
+            color: white;
+        }
+
+        .btn-back {
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            color: white;
+            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+        }
+
+        .btn-back:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.6);
+        }
+
+        .btn-retry {
+            background: linear-gradient(45deg, #d2b48c, #deb887);
+            color: #333;
+            box-shadow: 0 6px 20px rgba(210, 180, 140, 0.4);
+        }
+
+        .btn-retry:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(210, 180, 140, 0.6);
+            color: #333;
+        }
+
+        .decor-line {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #c0c0c0, #8b4513);
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .error-icon {
+                font-size: 6rem;
+            }
+
+            .chair-icon {
+                font-size: 5rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            .error-message{
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">404</div>
+        
+        
+        <h1>Oops!</h1>
+        <p class="error-message">
+            The furniture piece you're looking for has been moved to another showroom. 
+            Don't worry, we have plenty of beautiful pieces waiting for you!
+        </p>
+        
+        <div class="decor-line"></div>
+        
+        <div class="btn-group">
+            <a href="../index.html" class="btn btn-home">
+                🏠 Go to Home
+            </a>
+            <button onclick="goBack()" class="btn btn-back">
+                ↩️ Go Back
+            </button>
+            <button onclick="retryPage()" class="btn btn-retry">
+                🔄 Try Again
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function retryPage() {
+            window.location.reload();
+        }
+
+        // Add some floating particles for extra polish
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.style.cssText = `
+                position: fixed;
+                width: 6px;
+                height: 6px;
+                background: linear-gradient(45deg, #c0c0c0, #8b4513);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 100;
+                left: ${Math.random() * 100}vw;
+                animation: float ${3 + Math.random() * 2}s linear infinite;
+                opacity: 0.6;
+            `;
+            document.body.appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 5000);
+        }
+
+        // Create floating particles
+        setInterval(createParticle, 300);
+
+        // Add floating animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0% {
+                    top: 100vh;
+                    transform: translateY(0px) rotate(0deg);
+                }
+                100% {
+                    top: -20px;
+                    transform: translateY(-100vh) rotate(360deg);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
