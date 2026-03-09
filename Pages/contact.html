@@ -302,7 +302,87 @@ window.location.href="./error.html"
 </script>
 
       
-      
+         <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+    // Toggle Mobile Menu
+    mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // Change Icon
+        const icon = mobileToggle.querySelector('i');
+        if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Handle Dropdown for mobile view
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parentItem = toggle.parentElement;
+                parentItem.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close menu when clicking outside (mobile view)
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileToggle.querySelector('i').classList.remove('fa-times');
+                mobileToggle.querySelector('i').classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Adjust behavior on window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+            mobileToggle.querySelector('i').classList.remove('fa-times');
+            mobileToggle.querySelector('i').classList.add('fa-bars');
+            
+            // remove active classes from dropdowns
+            document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+    });
+});
+
+    </script>
+
+        <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100,
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.opacity = "0";
+                loader.style.pointerEvents = "none";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            }, 1100);
+        });
+    </script>
     
 </body>
 </html>
